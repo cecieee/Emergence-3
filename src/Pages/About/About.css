@@ -1,0 +1,8 @@
+h3 {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.active {
+    border-bottom: 2px solid #E9441D;
+}

@@ -70,7 +70,7 @@ const Timer = () => {
               {countDownTime?.days === 1 ? "Day" : "Days"}
             </span>
           </div>
-          <h1 className="text-[15vh]">:</h1>
+          <h1 className="text-[7.5vw]">:</h1>
           <div className="flex flex-col gap-5 relative">
             <div className="h-12 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#f7f7f7] rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full bg-[#fff]"></div>
@@ -83,7 +83,7 @@ const Timer = () => {
               {countDownTime?.hours === 1 ? "Hour" : "Hours"}
             </span>
           </div>
-          <h1 className="text-[15vh]">:</h1>
+          <h1 className="text-[7.5vw]">:</h1>
           <div className="flex flex-col gap-5 relative">
             <div className="h-12 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#f7f7f7] rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full bg-[#fff]"></div>
@@ -96,7 +96,7 @@ const Timer = () => {
               {countDownTime?.minutes === 1 ? "Minute" : "Minutes"}
             </span>
           </div>
-          <h1 className="text-[15vh]">:</h1>
+          <h1 className="text-[7.5vw]">:</h1>
           <div className="flex flex-col gap-5 relative">
             <div className="h-12 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#f7f7f7] rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full bg-[#fff]"></div>

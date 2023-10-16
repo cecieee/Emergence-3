@@ -4,33 +4,41 @@ import {BsInstagram,BsLinkedin,BsGlobe,BsFacebook} from "react-icons/bs";
 
 function Footer()
 {
+
+    const instagram_link="https://www.instagram.com/ieee_sb_cec/"
+    const facebook_link=""
+    const website_link="https://cecieee.org/"
+    const linkedin_link="https://www.linkedin.com/company/cecieee/"
+    const ticket_link=""
+    const Map_link="https://maps.app.goo.gl/tKuTktrDa6QfYT4dA"
     const jsxelement=(
         <>
 
             <div className=" relative flex h-fit min-h-[35vh] text-white font-montserrat bg-right bg-cover bg-no-repeat max-[950px]:min-h-fit " style={{backgroundImage:`url('/Group 1 (2).png')`}}>
                 <div className="absolute w-full h-full bg-gradient-to-r from-black via-black to-transparent z-0 max-[950px]:bg-black"></div>
-                <a href="" className="absolute w-1/4 h-full right-0"></a>
+                <a href={Map_link} className="absolute w-1/4 h-full right-0 max-[950px]:hidden"></a>
                 <div className="p-10 z-10 max-[950px]:w-full">
                     <p className="text-5xl font-semibold max-[950px]:text-center">GET YOUR TICKET</p>
                     <div className="flex items-center h-full max-[950px]:h-fit max-[950px]:py-10 max-[950px]:justify-center">
-                        <a href="" className="bg-[#EC431B] h-12 w-[30vh] flex justify-center items-center max-[950px]:">Get your Ticket now</a>
+                        <a href={ticket_link} className="bg-[#EC431B] h-12 w-[30vh] flex justify-center items-center border-black hover:bg-black hover:border hover:border-[#EC431B] hover:text-[#EC431B] delay-75 duration-150">Get your Ticket now</a>
                     </div>
-                    {/* <div className="">
-                        <div className="bg-gradient-to-b from-black to-transparent absolute bottom-0 w-full"></div>
-                        <img src="./Group 5.png" alt="" className="absolute bottom-0 w-full left-0"/>
-                    </div> */}
+                    <div className="min-[950px]:hidden relative">
+                        {/* <div className="bg-gradient-to-b from-black to-transparent absolute bottom-0 w-full"></div> */}
+                        <a href={Map_link} className="w-full h-full block absolute"></a>
+                        <img src="./Group 5.png" alt="" className=" w-full "/>
+                    </div>
                 </div>
             </div>
             <div className="  h-fit flex font-montserrat max-[950px]:flex-col-reverse">
                 <div className="basis-1/3 justify-center items-center flex flex-col mx-2">
                     <div className="w-fit h-fit">
-                        <img src="./black_logo.png" alt="" className="h-[13vh] max-[1570px]:h-[8vh]"/>
+                        <img src="./black_logo.png" alt="" className="h-[13vh] min-[1570px]:h-[8vh]"/>
                         <p className="self-start py-3 font-medium">All Rights Reserved.</p>
                     </div>
                 </div>
 
                 <div className="flex grow justify-center items-center max-[950px]:hidden">
-                    <img src="./Group.png" alt="" className="h-[23vh] max-[1570px]:h-[18vh]"  />
+                    <img src="./Group.png" alt="" className="h-[23vh] max-[1570px]:h-[18vh]"/>
                 </div>
 
                 <div className="basis-1/3 items-end flex flex-col p-8 mr-5 gap-4 max-[950px]:items-center max-[950px]:pb-12">
@@ -40,10 +48,10 @@ function Footer()
                     <p className="font-bold text-2xl py-2">EMAIL</p>
                     <p>Emergence2023@gmail.com</p>
                     <div className="flex w-full justify-end gap-4 max-[950px]:justify-center">
-                        <a href="" className="flex items-center"><BsInstagram/></a>
-                        <a href="" className="flex items-center"><BsLinkedin/></a>
-                        <a href="" className="flex items-center"><BsGlobe/></a>
-                        <a href="" className="flex items-center"><BsFacebook/></a>
+                        <a href={instagram_link} className="flex items-center"><BsInstagram/></a>
+                        <a href={linkedin_link} className="flex items-center"><BsLinkedin/></a>
+                        <a href={website_link} className="flex items-center"><BsGlobe/></a>
+                        <a href={facebook_link} className="flex items-center"><BsFacebook/></a>
                         <p className="border-l-2 pl-3 border-black">@ieeesbcec</p>
                         
                     </div>

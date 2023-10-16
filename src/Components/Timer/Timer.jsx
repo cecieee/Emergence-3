@@ -52,7 +52,7 @@ const Timer = () => {
   }, [startCountDown]);
 
   return (
-    <div className="bg-[#fff] h-[25vh] mt-10">
+    <div className="bg-[#fff] my-10 font-montserrat">
       <div className="flex flex-col items-center justify-center w-full h-50% gap-8 sm:gap-16">
         <span className="text-2xl sm:text-3xl font-semibold text-[#db5237] text-center tracking-widest px-2">
           Act Now, Time is Short
@@ -70,6 +70,7 @@ const Timer = () => {
               {countDownTime?.days === 1 ? "Day" : "Days"}
             </span>
           </div>
+          <h1 className="text-[15vh]">:</h1>
           <div className="flex flex-col gap-5 relative">
             <div className="h-12 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#f7f7f7] rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full bg-[#fff]"></div>
@@ -78,10 +79,11 @@ const Timer = () => {
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-[#fff]"></div>
             </div>
-            <span className="text-[#8486A9] text-xs sm:text-2xl text-center font-medium">
+            <span className="text-[#8486A9] text-xs sm:text-2xl text-center capitalize">
               {countDownTime?.hours === 1 ? "Hour" : "Hours"}
             </span>
           </div>
+          <h1 className="text-[15vh]">:</h1>
           <div className="flex flex-col gap-5 relative">
             <div className="h-12 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#f7f7f7] rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full bg-[#fff]"></div>
@@ -94,6 +96,7 @@ const Timer = () => {
               {countDownTime?.minutes === 1 ? "Minute" : "Minutes"}
             </span>
           </div>
+          <h1 className="text-[15vh]">:</h1>
           <div className="flex flex-col gap-5 relative">
             <div className="h-12 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#f7f7f7] rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full bg-[#fff]"></div>

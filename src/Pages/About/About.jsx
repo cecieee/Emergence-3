@@ -5,6 +5,9 @@ function About() {
   return (
     <div className='About'>
         <Timer />
+        <div className=''>
+          <h1>ABOUT IAS</h1>
+        </div>
     </div>
   )
 }

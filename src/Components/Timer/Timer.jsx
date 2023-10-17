@@ -52,7 +52,7 @@ const Timer = () => {
   }, [startCountDown]);
 
   return (
-    <div className="bg-[#fff] my-10 font-montserrat">
+    <div className="bg-[#fff] my-10 max-[450px]:my-0 font-montserrat">
       <div className="flex flex-col items-center justify-center w-full h-50% gap-8 sm:gap-16">
         <span className="text-2xl sm:text-3xl font-semibold text-[#db5237] text-center tracking-widest px-2">
           Act Now, Time is Short

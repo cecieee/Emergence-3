@@ -10,7 +10,7 @@ const Hero = () => {
           IEEE STUDENT BRANCH CEC
         </p>
         <h1 className="md:text-7xl sm:text-6xl text-4xl mt-[-20px] flex justify-center font-bold max-[500px]:text-4xl" data-aos="fade-in" data-aos-duration="2500">
-          <img src="./Logo.png" alt="" className="h-[20vh] max-[500px]:h-fit"/>
+          <img src="./Logo.png" alt="" className="h-[20vh] max-[500px]:h-fit max-[650px]:my-8"/>
         </h1>
         {/* <div className="flex justify-center items-center">
           <p className="md:text-2xl sm:text-sm max-[500px]:text-base text-xl font-bold py-4">
@@ -24,7 +24,7 @@ const Hero = () => {
             loop
           />
         </div> */}
-        <p className="md:text-2xl sm:text-sm text-xl max-[500px]:text-base px-1 font-bold text-soft-grey">
+        <p className="md:text-2xl sm:text-sm text-xl max-[500px]:text-base px-1 max-[650px]:mb-4 font-bold text-soft-grey">
           November 4th-5th | College of Engineering Chengannur
         </p>
         {/* <button className="bg-deep-orange w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black">

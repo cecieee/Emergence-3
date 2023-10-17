@@ -15,7 +15,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-[#0c0d0d]">
+    <Disclosure as="nav" className="fixed w-screen z-50 bg-[#0c0d0d]">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 relative">
@@ -48,8 +48,8 @@ export default function Example() {
                           href={item.href}
                           className={classNames(
                             item.current
-                              ? "bg-[#E9441D] text-white"
-                              : "text-gray-300 hover:bg-[#E9441D] hover:text-white",
+                              ? "bg-[#0c0d0d] text-[#E9441D]"
+                              : "text-gray-300 hover:text-[#E9441D]",
                             "rounded-md px-3 py-2 text-sm font-medium"
                           )}
                           aria-current={item.current ? "page" : undefined}

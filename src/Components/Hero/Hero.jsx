@@ -9,7 +9,7 @@ const Hero = () => {
         <p className="text-deep-orange font-bold p-2">
           IEEE STUDENT BRANCH CEC
         </p>
-        <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-3" data-aos="zoom-in" data-aos-duration="1500">
+        <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-3" data-aos="fade-in" data-aos-duration="3000">
           Emergence 3.0
         </h1>
         <div className="flex justify-center items-center">

@@ -1,10 +1,1 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-body {
-  height: 70vh;
 
-  background: url(../../../public/hero-bg2.png);
-
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}

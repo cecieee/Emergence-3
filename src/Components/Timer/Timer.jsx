@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
+import Typed from "react-typed";
 
 const Timer = () => {
   const [countDownTime, setCountDownTime] = useState({
@@ -55,7 +56,13 @@ const Timer = () => {
     <div className="bg-[#fff] my-10 pt-14 max-[450px]:my-0 font-montserrat">
       <div className="flex flex-col items-center justify-center w-full h-50% gap-8 sm:gap-16" data-aos="fade-in" data-aos-duration="1000">
         <span className="text-2xl sm:text-3xl font-semibold text-[#db5237] text-center tracking-widest px-2">
-          Act Now, Time is Short
+        <Typed
+            className="md:text-2xl sm:text-sm max-[500px]:text-base text-xl font-bold md:pl-4 pl-2"
+            strings={["Act Now, Time is Short"]}
+            typeSpeed={80}
+            backSpeed={90}
+            loop
+          />
         </span>
         <div className="flex justify-center gap-3 sm:gap-8">
           <div className="flex flex-col gap-5 relative">

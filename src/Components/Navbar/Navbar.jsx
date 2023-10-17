@@ -42,16 +42,17 @@ export default function Example() {
                 <div className="flex space-x-7  flex-shrink-0 items-center">
                   <img
                     className="h-10 w-auto"
-                    src={"./Logo.png"}
+                    src={"./ias-png-white.png"}
                     alt="Your Company"
                   />
                   <img
                     className="h-10 w-auto"
-                    src={"./ias-png-white.png"}
+                    src={"./Logo.png"}
                     alt="Your Company"
                   />
+            
                 </div>
-                <div className="hidden pl-44 sm:ml-6 sm:block">
+                <div className="hidden pl-40 sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     <div className="flex items-center space-x-7">
                       {navigation.map((item) => (

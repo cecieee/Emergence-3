@@ -39,14 +39,19 @@ export default function Example() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
+                <div className="flex space-x-7  flex-shrink-0 items-center">
                   <img
                     className="h-10 w-auto"
                     src={"./Logo.png"}
                     alt="Your Company"
                   />
+                  <img
+                    className="h-10 w-auto"
+                    src={"./ias-png-white.png"}
+                    alt="Your Company"
+                  />
                 </div>
-                <div className="hidden pl-64 sm:ml-6 sm:block">
+                <div className="hidden pl-44 sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     <div className="flex items-center space-x-7">
                       {navigation.map((item) => (

@@ -78,7 +78,7 @@ export default function Example() {
             </div>
           </div>
           <div className={`sm:hidden ${open ? 'block' : 'hidden'}`}>
-            <div className="space-y-1 bg-[#0c0d0d] w-screen absolute px-2 pb-3 pt-2">
+            <div className="space-y-1 bg-[#0c0d0d] w-screen text-center absolute px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}

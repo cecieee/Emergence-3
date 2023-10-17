@@ -27,7 +27,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className='ml-24 my-52 max-[450px]:ml-12'>
+      <div className='ml-24 my-52 max-[450px]:ml-12 max-[450px]:my-32'>
         <h1 className='font-bold text-4xl tracking-wider max-[450px]:tracking-normal'>ABOUT EMERGENCE</h1>
         <div className='flex gap-16'>
           <h3

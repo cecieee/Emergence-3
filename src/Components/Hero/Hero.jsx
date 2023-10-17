@@ -5,7 +5,7 @@ import Button from "../../Components/Button/Button";
 const Hero = () => {
   return (
     <div className="text-white p-5">
-      <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center p-3">
+      <div className="max-w-[800px] mt-[-96px] w-full h-screen max-[450px]:h-[70vh] mx-auto text-center flex flex-col justify-center p-3">
         <p className="text-deep-orange font-bold p-2">
           IEEE STUDENT BRANCH CEC
         </p>

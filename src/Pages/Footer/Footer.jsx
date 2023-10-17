@@ -35,9 +35,13 @@ function Footer()
             </div>
             <div className="  h-fit flex font-montserrat max-[950px]:flex-col-reverse">
                 <div className="basis-1/3 justify-center items-center flex flex-col mx-2">
-                    <div className="w-fit h-fit">
+                    <div className="w-fit h-fit ">
                         <img src="./black_logo.png" alt="" className="h-[13vh] min-[1570px]:h-[8vh] max-[630px]:h-[6vh]"/>
                         <p className="self-start py-3 font-medium max-[950px]:text-[10px]">All Rights Reserved.</p>
+                        <div className="flex gap-10 my-4 max-[950px]:flex-col">
+                            <img src="./ieee.png" alt="" className="h-[5vh]"/>
+                            <img src="./ieee sb cec.png" alt="" className="h-[5vh]"/>
+                        </div>
                     </div>
                 </div>
 

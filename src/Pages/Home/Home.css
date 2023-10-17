@@ -4,8 +4,15 @@
 
   background: url(../../../public/5.png);
 
-  background-position: top;
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+@media (max-width: 500px) {
+  .Heropage{
+
+    background: url(../../../public/mobile_view.png);
+    background-position: center;
+  }
+}

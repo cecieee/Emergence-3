@@ -30,7 +30,7 @@ const Hero = () => {
         {/* <button className="bg-deep-orange w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black">
           Register Now
         </button> */}
-        <Button children="Register Now" className="lg:mt-6" />
+        <Button children="Register Now" className="lg:mt-6 border-black hover:bg-black hover:border hover:border-[#EC431B] hover:text-[#EC431B] delay-75 transition-all ease-in-out" />
       </div>
     </div>
   );

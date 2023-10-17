@@ -20,8 +20,8 @@ function Footer()
                 <div className="p-10 z-10 max-[950px]:w-full">
                     <p className="text-5xl font-semibold max-[950px]:text-center">GET YOUR TICKET</p>
                     <div className="flex flex-col items-start justify-center h-full max-[950px]:h-fit max-[950px]:py-10 max-[950px]:justify-center">
-                        <p>Be part of the tech revolution at Emergence 3.0 - reserve your tickets today for a glimpse into tomorrow's world</p>
-                        <a href={ticket_link} className="bg-[#EC431B] h-12 w-[30vh] flex justify-center items-center border-black hover:bg-black hover:border hover:border-[#EC431B] hover:text-[#EC431B] delay-75 transition-all ease-in-out">Get your Ticket now</a>
+                        <p className="py-5">Be part of the tech revolution at Emergence 3.0 - reserve your tickets today for a glimpse into tomorrow's world</p>
+                        <a href={ticket_link} className="bg-[#EC431B] h-12 w-[30vh] flex justify-center items-center max-[950px]:w-full border-black hover:bg-black hover:border hover:border-[#EC431B] hover:text-[#EC431B] delay-75 transition-all ease-in-out">Get your Ticket now</a>
 
                     </div>
                     <div className="min-[950px]:hidden relative">

@@ -5,7 +5,7 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <div className="text-white p-5">
-      <div className="max-w-[800px] mt-[-20px] w-full h-[105vh] max-[450px]:h-[70vh] mx-auto text-center flex flex-col justify-center p-3 max-[500px]:mt-[20vh]">
+      <div className="max-w-[800px] mt-[-20px] w-full h-[105vh] max-[450px]:h-[70vh] mx-auto text-center flex flex-col justify-center p-3 max-[500px]:mt-[12vh]">
         <p className="text-deep-orange font-bold p">IEEE STUDENT BRANCH CEC</p>
         <h1
           className="md:text-7xl sm:text-6xl text-4xl mt-[-20px] flex justify-center font-bold max-[500px]:text-4xl"

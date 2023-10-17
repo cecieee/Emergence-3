@@ -3,7 +3,7 @@ import Hero from "../../Components/Hero/Hero.jsx";
 import "./Home.css";
 function Home() {
   return (
-    <div>
+    <div className="Heropage h-screen">
       <Hero />
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
+import Typed from "react-typed";
 import Button from "../../Components/Button/Button";
-import "./Hero.css";
+
 const Hero = () => {
   return (
     <div className="text-white p-5">
@@ -29,9 +30,9 @@ const Hero = () => {
         {/* <button className="bg-deep-orange w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black">
           Register Now
         </button> */}
-        <Button className="lg:mt-6 border-black hover:bg-black hover:border hover:border-[#EC431B] hover:text-[#EC431B] delay-75 transition-all ease-in-out">
+        <Button className="lg:mt-6 border-black hover:bg-black hover:border hover:border-[#EC431B] hover:text-[#EC431B] delay-75 transition-all ease-in-out" >
           <a href={"http://www.yepdesk.com/emergence-3"}>Register Now</a>
-        </Button>
+          </Button>
       </div>
     </div>
   );

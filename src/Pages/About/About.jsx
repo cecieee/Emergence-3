@@ -33,7 +33,7 @@ function About() {
           <h3
             data-aos="fade-right"
             data-aos-duration="1000"
-            onClick={toggleDiv}
+            //onClick={toggleDiv}
             className={`text-lg font-semibold transition-all ease-in-out duration-150  ${showDiv1 ? 'text-[#E9441D] active' : ''} mt-5`}
           >
             Overview

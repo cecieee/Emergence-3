@@ -3,10 +3,10 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Home", href: "#", current: true },
-  { name: "About", href: "#", current: false },
+  { name: "About", href: "#About", current: false },
   { name: "Events", href: "#", current: false },
   { name: "Tracks", href: "#", current: false },
-  { name: "Contact", href: "#", current: false },
+  { name: "Contact", href: "#Contact", current: false },
 ];
 
 function classNames(...classes) {
@@ -73,7 +73,7 @@ export default function Example() {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? "bg-[#E9441D] text-white"
+                      ? " text-[#E9441D]"
                       : "text-gray-300 hover-bg-gray-700 hover-text-white",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}

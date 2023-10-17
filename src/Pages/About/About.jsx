@@ -14,7 +14,7 @@ function About() {
   return (
     <div className='About font-montserrat'>
       <Timer />
-
+      <div id='About'></div>
       <div className='ml-24 my-36 max-[450px]:my-24 max-[450px]:ml-12'>
         <h1 className='font-bold text-4xl tracking-wide mb-10'>ABOUT IAS</h1>
         <div className='flex mr-28 max-[450px]:flex-col  max-[450px]:mr-12'>

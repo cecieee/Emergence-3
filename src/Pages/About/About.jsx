@@ -18,7 +18,7 @@ function About() {
       <div className='ml-24 my-52 max-[450px]:my-24 max-[450px]:ml-12'>
         <h1 className='font-bold text-4xl tracking-wide mb-10'>ABOUT IAS</h1>
         <div className='flex mr-28 max-[450px]:flex-col  max-[450px]:mr-12'>
-          <img src="./Rectangle.png" alt="" className='h-[40vh] w-[40vw] mr-10 max-[450px]:h-[25vh] max-[450px]:w-full' />
+          <img src="./Rectangle.png" alt="" className='h-[40vh] w-[40vw] mr-10 max-[450px]:h-[25vh] max-[450px]:w-full max-[450px]:mb-10' />
           <div className='text-justify text-lg'>
             IEEE INDUSTRIAL APPLICATION SOCIETY, College Of Engineering Chengannur is a
             prestigious student branch chapter functioning for nearly 6 years in CEC. IEEE IAS SBC
@@ -27,7 +27,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className='ml-24 my-52'>
+      <div className='ml-24 my-52 max-[450px]:ml-12'>
         <h1 className='font-bold text-4xl tracking-wider max-[450px]:tracking-normal'>ABOUT EMERGENCE</h1>
         <div className='flex gap-16'>
           <h3
@@ -43,7 +43,7 @@ function About() {
             Activities
           </h3>
         </div>
-        <div className='flex my-7 text-justify text-lg max-[450px]:flex-col  max-[450px]:mr-20'>
+        <div className='flex my-7 text-justify text-lg max-[450px]:flex-col  max-[450px]:mr-12'>
           <div className='mr-10 max-[450px]:mr-0' style={{ display: showDiv1 ? 'block' : 'none' }}>
             Emergence is not just an event; it's an experience that brings together the brightest minds and creative thinkers from across Kerala. It's a two-day techno-managerial conclave that aims to inspire, educate, and connect participants in an atmosphere of innovation and collaboration.
           </div>

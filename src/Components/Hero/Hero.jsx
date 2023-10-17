@@ -5,7 +5,7 @@ import Button from "../../Components/Button/Button";
 const Hero = () => {
   return (
     <div className="text-white p-5">
-      <div className="max-w-[800px] mt-[-96px] w-full h-screen max-[450px]:h-[70vh] mx-auto text-center flex flex-col justify-center p-3">
+      <div className="max-w-[800px] mt-[-96px] w-full h-[105vh] max-[450px]:h-[70vh] mx-auto text-center flex flex-col justify-center p-3">
         <p className="text-deep-orange font-bold p-2">
           IEEE STUDENT BRANCH CEC
         </p>
@@ -30,7 +30,9 @@ const Hero = () => {
         {/* <button className="bg-deep-orange w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black">
           Register Now
         </button> */}
-        <Button children="Register Now" className="lg:mt-6 border-black hover:bg-black hover:border hover:border-[#EC431B] hover:text-[#EC431B] delay-75 transition-all ease-in-out" />
+        <Button className="lg:mt-6 border-black hover:bg-black hover:border hover:border-[#EC431B] hover:text-[#EC431B] delay-75 transition-all ease-in-out" >
+          <a href={"http://www.yepdesk.com/emergence-3"}>Register Now</a>
+          </Button>
       </div>
     </div>
   );

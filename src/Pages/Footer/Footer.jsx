@@ -6,11 +6,13 @@ function Footer()
 {
 
     const instagram_link="https://www.instagram.com/ieee_sb_cec/"
-    const facebook_link=""
-    const website_link="https://cecieee.org/"
+    const facebook_link="https://www.facebook.com/IEEECEC"
+    const sb_website_link="https://cecieee.org/"
+    const ias_website_link="http://ias.cecieee.org/"
     const linkedin_link="https://www.linkedin.com/company/cecieee/"
-    const ticket_link=""
+    const ticket_link="http://www.yepdesk.com/emergence-3"
     const Map_link="https://maps.app.goo.gl/hcgkytZqFGLKTscR7"
+
     const jsxelement=(
         <>
 
@@ -35,7 +37,7 @@ function Footer()
                 <div className="basis-1/3 justify-center items-center flex flex-col mx-2">
                     <div className="w-fit h-fit">
                         <img src="./black_logo.png" alt="" className="h-[13vh] min-[1570px]:h-[8vh] max-[630px]:h-[6vh]"/>
-                        <p className="self-start py-3 font-medium">All Rights Reserved.</p>
+                        <p className="self-start py-3 font-medium max-[950px]:text-[10px]">All Rights Reserved.</p>
                     </div>
                 </div>
 
@@ -52,9 +54,9 @@ function Footer()
                     <div className="flex w-full justify-end gap-4 max-[950px]:justify-center">
                         <a href={instagram_link} className="flex items-center"><BsInstagram/></a>
                         <a href={linkedin_link} className="flex items-center"><BsLinkedin/></a>
-                        <a href={website_link} className="flex items-center"><BsGlobe/></a>
+                        <a href={ias_website_link} className="flex items-center"><BsGlobe/></a>
                         <a href={facebook_link} className="flex items-center"><BsFacebook/></a>
-                        <p className="border-l-2 pl-3 border-black">@ieeesbcec</p>
+                        <a href={sb_website_link} className="border-l-2 pl-3 border-black">@ieeesbcec</a>
                         
                     </div>
                 </div>

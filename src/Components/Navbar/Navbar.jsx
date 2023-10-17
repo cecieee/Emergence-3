@@ -1,12 +1,13 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useState } from "react"; // Import useState
 
 const navigation = [
   { name: "Home", href: "#", current: true },
-  { name: "About", href: "#", current: false },
+  { name: "About", href: "#About", current: false },
   { name: "Events", href: "#", current: false },
   { name: "Tracks", href: "#", current: false },
-  { name: "Contact", href: "#", current: false },
+  { name: "Contact", href: "#Contact", current: false },
 ];
 
 function classNames(...classes) {
@@ -14,6 +15,12 @@ function classNames(...classes) {
 }
 
 export default function Example() {
+  const [currentItem, setCurrentItem] = useState(navigation[0]); // Initialize current item state
+
+  const handleClick = (item) => {
+    setCurrentItem(item);
+  };
+
   return (
     <Disclosure as="nav" className="fixed w-screen z-50 bg-[#0c0d0d]">
       {({ open }) => (
@@ -32,27 +39,34 @@ export default function Example() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
+                <div className="flex space-x-7  flex-shrink-0 items-center">
+                  <img
+                    className="h-10 w-auto"
+                    src={"./ias-png-white.png"}
+                    alt="Your Company"
+                  />
                   <img
                     className="h-10 w-auto"
                     src={"./Logo.png"}
                     alt="Your Company"
                   />
+            
                 </div>
-                <div className="hidden pl-64 sm:ml-6 sm:block">
+                <div className="hidden pl-40 sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-                    <div className="flex items-center space-x-7"> {/* Center align navigation items */}
+                    <div className="flex items-center space-x-7">
                       {navigation.map((item) => (
                         <a
                           key={item.name}
                           href={item.href}
                           className={classNames(
-                            item.current
+                            item === currentItem
                               ? "bg-[#0c0d0d] text-[#E9441D]"
                               : "text-gray-300 hover:text-[#E9441D]",
                             "rounded-md px-3 py-2 text-sm font-medium"
                           )}
-                          aria-current={item.current ? "page" : undefined}
+                          onClick={() => handleClick(item)}
+                          aria-current={item === currentItem ? "page" : undefined}
                         >
                           {item.name}
                         </a>
@@ -63,21 +77,21 @@ export default function Example() {
               </div>
             </div>
           </div>
-
           <div className={`sm:hidden ${open ? 'block' : 'hidden'}`}>
-            <div className="space-y-1 bg-[#0c0d0d] w-screen absolute px-2 pb-3 pt-2">
+            <div className="space-y-1 bg-[#0c0d0d] w-screen text-center absolute px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current
-                      ? "bg-[#E9441D] text-white"
+                    item === currentItem
+                      ? "text-[#E9441D]"
                       : "text-gray-300 hover-bg-gray-700 hover-text-white",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
-                  aria-current={item.current ? "page" : undefined}
+                  onClick={() => handleClick(item)}
+                  aria-current={item === currentItem ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>

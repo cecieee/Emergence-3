@@ -4,9 +4,14 @@ import About from "./Pages/About/About";
 import Footer from "./Pages/Footer/Footer";
 import Home from "./Pages/Home/Home";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
+AOS.init();
+
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden">
       <Appbar />
       <Home />
       <About />

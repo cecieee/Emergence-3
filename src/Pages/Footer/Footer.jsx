@@ -38,9 +38,9 @@ function Footer()
                     <div className="w-fit h-fit ">
                         <img src="./black_logo.png" alt="" className="h-[13vh] min-[1570px]:h-[8vh] max-[630px]:h-[6vh]"/>
                         <p className="self-start py-3 font-medium max-[950px]:text-[10px]">All Rights Reserved.</p>
-                        <div className="flex gap-10 my-4 max-[950px]:flex-col">
-                            <img src="./ieee.png" alt="" className="h-[5vh]"/>
-                            <img src="./ieee sb cec.png" alt="" className="h-[5vh]"/>
+                        <div className="flex gap-10 my-4 max-[950px]:flex-col " >
+                            <img src="./ieee.png" alt="" className="h-[5vh] max-[950px]:scale-75"/>
+                            <img src="./ieee sb cec.png" alt="" className="h-[5vh] max-[950px]:scale-75"/>
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ function Footer()
                     <p>Swathy: 7510669792</p>
                     <p className="pb-6">Akash: 7994831729</p>
                     <p className="font-bold text-2xl py-2">EMAIL</p>
-                    <p>Emergence2023@gmail.com</p>
+                    <p>iasemergence3.0@gmail.com</p>
                     <div className="flex w-full justify-end gap-4 max-[950px]:justify-center">
                         <a href={instagram_link} className="flex items-center"><BsInstagram/></a>
                         <a href={linkedin_link} className="flex items-center"><BsLinkedin/></a>

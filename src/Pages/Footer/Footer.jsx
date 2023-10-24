@@ -10,7 +10,6 @@ function Footer()
     const sb_website_link="https://cecieee.org/"
     const ias_website_link="http://ias.cecieee.org/"
     const linkedin_link="https://www.linkedin.com/company/cecieee/"
-    const ticket_link="http://www.yepdesk.com/emergence-3"
     const Map_link="https://maps.app.goo.gl/hcgkytZqFGLKTscR7"
 
     const jsxelement=(
@@ -18,6 +17,7 @@ function Footer()
 
             <div id="Contact" className=" relative flex h-fit min-h-[35vh] text-white font-montserrat bg-right bg-cover bg-no-repeat max-[950px]:min-h-fit " style={{backgroundImage:`url('/Group 1 (2).png')`}}>
                 <div className="absolute w-full h-full bg-gradient-to-r from-black via-black to-transparent z-0 max-[950px]:bg-black"></div>
+                {/* eslint-disable-next-line*/}
                 <a href={Map_link} className="absolute w-1/4 h-full right-0 max-[950px]:hidden"></a>
                 <div className="p-10 z-10 max-[950px]:w-full">
                     <p className="text-5xl font-semibold max-[950px]:text-center">GET YOUR TICKET</p>
@@ -28,6 +28,7 @@ function Footer()
                     </div>
                     <div className="min-[950px]:hidden relative">
                         {/* <div className="bg-gradient-to-b from-black to-transparent absolute bottom-0 w-full"></div> */}
+                        {/* eslint-disable-next-line*/}
                         <a href={Map_link} className="w-full h-full block absolute z-10"></a>
                         <img src="./Group 5.png" alt="" className=" w-full z-0"/>
                     </div>

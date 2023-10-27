@@ -3,36 +3,36 @@ import Appbar from "./Components/Navbar/Navbar.jsx";
 import About from "./Pages/About/About";
 import Footer from "./Pages/Footer/Footer";
 import Home from "./Pages/Home/Home";
-import { useState , useEffect } from "react";
+import Workshops from "./Pages/Workshops/Workshops";
+import { useState, useEffect } from "react";
 import HashLoader from "react-spinners/HashLoader";
 import Typed from "react-typed";
 
-
-import AOS from 'aos';
-import 'aos/dist/aos.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 AOS.init();
 
 function App() {
-  const [loading , setLoading] = useState(false)
-  useEffect(()=>{
-    setLoading(true)
-    setTimeout(()=> {
-      setLoading(false)
-    },10000)
-  },[])
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 10000);
+  }, []);
   return (
     <div className="App overflow-x-hidden">
-      {
-        !loading?
-      <div>
-        <Appbar />
-        <Home />
-        <About />
-        <Footer />
-      </div>
-      :
-      <div class="flex justify-center items-center h-screen w-screen bg-[#0c0d0d]">
+      {!loading ? (
+        <div>
+          <Appbar />
+          <Home />
+          <About />
+          <Workshops />
+          <Footer />
+        </div>
+      ) : (
+        <div class="flex justify-center items-center h-screen w-screen bg-[#0c0d0d]">
           <HashLoader
             color="#E9441D"
             loading
@@ -45,7 +45,7 @@ function App() {
             typeSpeed={200}
           />
         </div>
-      }
+      )}
     </div>
   );
 }

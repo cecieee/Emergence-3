@@ -5,8 +5,8 @@ import { useState } from "react"; // Import useState
 const navigation = [
   { name: "Home", href: "#", current: true },
   { name: "About", href: "#About", current: false },
-  { name: "Events", href: "#", current: false },
-  { name: "Tracks", href: "#", current: false },
+  //{ name: "Events", href: "#", current: false },
+  { name: "Tracks", href: "#tracks", current: false },
   { name: "Contact", href: "#Contact", current: false },
 ];
 

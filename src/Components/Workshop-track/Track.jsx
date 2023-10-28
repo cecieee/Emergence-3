@@ -3,7 +3,6 @@ import React, { useState } from "react";
 function Track(props) {
   const [CardState,setCard]=useState(false)
 
-
   const toggleDiv = () => {
     setCard(!CardState);
   };

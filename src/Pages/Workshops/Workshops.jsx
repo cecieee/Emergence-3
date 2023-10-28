@@ -98,9 +98,11 @@ function Workshops() {
         </div>
       </div>
       <div className="text-black font-montserrat mx-auto my-36 px-6 py-6  bg-white block lg:hidden">
-        <h1 className="text-3xl text-deep-orange font-bold tracking-wider uppercase my-2 ">
+        <h1 className="text-2xl text-deep-orange font-bold tracking-wider uppercase mb-12 ">
           Workshops
         </h1>
+
+        <div className="flex flex-col gap-24">
         <Track
           id="01"
           imagePath="./t1mentors.png"
@@ -108,6 +110,7 @@ function Workshops() {
           sname="Aromal PS & Rithunath G"
           designation=""
           institution=""
+          isOdd={false}
           description="WebFrame is a software framework that is designed to develop the framework of web applications and is the best place for designers to get inspired from other apps around the web."
         />
         <Track
@@ -118,6 +121,7 @@ function Workshops() {
           sname="Sachin Jose"
           designation="Cyber Security Engineer"
           institution="Xoriant"
+          isOdd={true}
           description="This session is designed to equip you with the essential knowledge and tools to assess and enhance the security of network systems, making you a formidable guardian of the digital realm.
           "
         />
@@ -132,6 +136,10 @@ function Workshops() {
           description="This session is designed to equip you with the essential knowledge and tools to assess and enhance the security of network systems, making you a formidable guardian of the digital realm.
           "
         />
+
+
+        </div>
+
       </div>
     </>
   );

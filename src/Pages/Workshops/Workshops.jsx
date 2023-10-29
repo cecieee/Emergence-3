@@ -4,8 +4,9 @@ import "./Workshops.css";
 function Workshops() {
   return (
     <>
+    <div id="tracks" >
       <div className="text-white font-montserrat mx-auto  px-24 py-6 bg-[#0c0d0d] hidden lg:block">
-        <h1 id="tracks" className="text-3xl text-deep-orange font-bold tracking-wider uppercase lg:text-4xl my-4 pt-10" data-aos="fade-up" data-aos-duration="1000">
+        <h1 className="text-3xl text-deep-orange font-bold tracking-wider uppercase lg:text-4xl my-4 pt-10" data-aos="fade-up" data-aos-duration="1000">
           Workshops
         </h1>
         <div className="track flex justify-start my-44 px-11 items-start w-full gap-2">
@@ -136,6 +137,7 @@ function Workshops() {
         </div>
 
       </div>
+    </div>
     </>
   );
 }

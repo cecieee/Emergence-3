@@ -131,8 +131,6 @@ function Workshops() {
             description="This session is designed to equip you with the essential knowledge and tools to assess and enhance the security of network systems, making you a formidable guardian of the digital realm.
           "
           />
-
-
         </div>
 
       </div>

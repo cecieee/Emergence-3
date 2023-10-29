@@ -42,21 +42,20 @@ function Track(props) {
     </div> */}
 
 
-    <div className="relative w-full h-[30vh] flex  z-0" onClick={toggleDiv}>
+    <div className="relative w-full h-[26vh] flex  z-0" onClick={toggleDiv}>
 
       <div className={"w-full h-full flex border-[1px] border-[#E9441D] bg-white transition-all "+(CardState? "z-0 translate-x-2 translate-y-2 ":"z-30 ")+(props.isOdd? " flex-row-reverse":"")}>
         <h1 className="bg-white font-bold absolute top-[-10px] right-5 px-2">TRACK {props.id}</h1>
-        <img src={props.imagePath} alt="" className={"h-[95%] flex self-end w-[50%] pt-5 transition-all "+(CardState? "hidden":"block")}/>
-        <div className={"h-full w-full  flex-col justify-center text-center transition-all  "+(CardState? "hidden":"flex")}>
+        <img src={props.imagePath} alt="" className={"h-[95%] flex self-end pt-5 transition-all "+(CardState? "hidden":"block")}/>
+        <div className={"h-full w-full  flex-col justify-center text-center transition-all px-3 "+(CardState? "hidden":"flex")}>
           <h1 className="text-lg font-bold ">{props.wname}</h1> 
           <p className="text-sm">Speaker <span className="font-bold">: {props.sname}</span></p> 
-
         </div>
       </div>
       <div className={"w-full h-full bg-[#E9441D] absolute top-3 left-3 transition-all "+(CardState?"z-30 opacity-100 -translate-x-4 -translate-y-5 ":"z-0 opacity-80")}>
         <h1 className="bg-white font-bold absolute top-[-10px] left-5 px-2">TRACK {props.id}</h1>
         <div className="flex flex-col p-5 text-white justify-center w-full h-full">
-          <p className="text-lg font-bold min-[380px]:text-xl min-[500px]:text-3xl">{props.wname}</p>
+          <p className="text-lg  font-bold min-[380px]:text-xl min-[500px]:text-3xl">{props.wname}</p>
           <p className="max-[380px]:text-xs text-base py-2">{props.description}</p>
 
         </div>

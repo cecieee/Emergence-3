@@ -7,6 +7,7 @@ import Workshops from "./Pages/Workshops/Workshops";
 import { useState, useEffect } from "react";
 import HashLoader from "react-spinners/HashLoader";
 import Typed from "react-typed";
+import Iv from "./Pages/Iv/Iv";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -29,6 +30,7 @@ function App() {
           <Home />
           <About />
           <Workshops />
+          <Iv />
           <Footer />
         </div>
       ) : (
